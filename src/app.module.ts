@@ -12,6 +12,7 @@ import ormconfing from 'src/ormconfig';
 import { UserModule } from 'src/user/user.module';
 import { AuthMiddleware } from 'src/user/middlewares/auth-middleware.service';
 import { ArticleModule } from 'src/article/article.module';
+import { ProfileModule } from 'src/profile/profile.module';
 
 @Module({
   imports: [
@@ -19,6 +20,7 @@ import { ArticleModule } from 'src/article/article.module';
     TagModule,
     UserModule,
     ArticleModule,
+    ProfileModule,
   ],
   controllers: [AppController],
   providers: [AppService],
