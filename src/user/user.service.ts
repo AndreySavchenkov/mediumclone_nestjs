@@ -21,9 +21,11 @@ export class UserService {
     const errorResponse = {
       errors: {},
     };
+
     const userByEmail = await this.userRepository.findOne({
       email: createUserDto.email,
     });
+
     const userByUsername = await this.userRepository.findOne({
       username: createUserDto.username,
     });
